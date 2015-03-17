@@ -6,4 +6,6 @@
 
 #Facebook friendship forced directed layout graph using D3
 
+[Facebook Friendship D3 forced *sticky* layout graph](http://adidonato.github.io/facebook/sticky.html)
+
 [Facebook Friendship D3 forced layout graph](http://adidonato.github.io/facebook/fb-redirected.html)
