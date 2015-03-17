@@ -1,1 +1,2 @@
-Currently contains Facebook friendship forced directed layou using D3
+Linkedin connections dendogram using D3
+Facebook friendship forced directed layout graph using D3
