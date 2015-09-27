@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <title>Facebook Friendships Custom Image</title>
+  <title>Facebook Friendships</title>
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/templatemo_style.css">
   <link rel="stylesheet" href="/css/font-awesome.min.css">
@@ -46,16 +46,16 @@
   ga('send', 'pageview');
 
 </script>
-
 <div class="container-fluid">
   <br>
-  <p>This is a customized version of<a href="https://github.com/mbostock/d3/wiki/Force-Layout" > the force layout network graph</a>, representing my Facebook Frienships and using the FB logo to represent the node as an example of customizations that can be done. Built in d3.js</p><br>
+  <p>This is a customized version of<a href="https://github.com/mbostock/d3/wiki/Force-Layout" > the force layout network graph</a>, representing my Facebook Frienships. Built in d3.js</p><br>
   <p>
    Anonymized version (The code that renders the user's names is commented out so you can use it for your own experiments).<br> <a href="https://github.com/adidonato/facebook-network-graph">  Fork the code used to generate this viz and make your own.</a>
   </p>
 </div>
 
 <div class="container-fluid">
+
 
 <script>
 
@@ -105,16 +105,9 @@ d3.json("force.json", function(error, graph) {
       .style("stroke", function(d) { return color(d.group); })
       .call(force.drag);
 
-  /*    node.append("circle")
+      node.append("circle")
       .attr("r", 8)
       .style("fill", function(d) { return color(d.id == "me" ? 1 : 2); });
-*/
-      node.append("image")
-      .attr("xlink:href", "https://facebook.com/favicon.ico")
-      .attr("x", -16)
-      .attr("y", -8)
-      .attr("width", 16)
-      .attr("height", 16);
 
     /*  node.append("text")
       .attr("dx", 3)

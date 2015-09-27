@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-
+p {
+  margin: 20px, 20px, 20px;
+}
 .node circle {
   fill: #fff;
-  stroke: steelblue;
+  stroke: orange;
   stroke-width: 1.5px;
 }
 
@@ -45,10 +47,18 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a href="http://adidonato.github.io" class="navbar-brand">Home</a>
+      <a href="./../" class="navbar-brand">Home</a>
     </div>
   </div>
 </nav>
+<div class="container-fluid">
+  <br>
+  <p>This is a <a href="http://bl.ocks.org/mbostock/4063550" >Radial Reingold–Tilford Tree</a>, representing clustered LinkedIn contacts by Job Title. Built in d3.js</p><br>
+  <p>
+   Anonymized version. <a href="https://github.com/adidonato/linkedin_connections_tree">  Fork the code used to generate this viz and make your own. </a>
+  </p>
+</div>
+<div class="container-fluid">
 <script>
 
 var diameter = 960;
@@ -95,3 +105,5 @@ d3.json("d3-data.json", function(error, root) {
 d3.select(self.frameElement).style("height", diameter - 150 + "px");
 
 </script>
+</div>
+</html>

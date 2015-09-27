@@ -50,10 +50,19 @@
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a href="http://adidonato.github.io" class="navbar-brand">Home</a>
+      <a href="./../" class="navbar-brand">Home</a>
     </div>
   </div>
 </nav>
+<div class="container-fluid">
+  <br>
+  <p>This is an interactive version of the <a href="http://bl.ocks.org/mbostock/4339083" >Radial Reingold–Tilford Tree</a>, representing clustered LinkedIn contacts by Job Title. Built in d3.js</p><br>
+  <p>
+   Anonymized version. <a href="https://github.com/adidonato/linkedin_connections_tree">  Fork the code used to generate this viz and make your own. </a>
+  </p>
+</div>
+
+<div class="container-fluid">
 <script>
 
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
@@ -76,7 +85,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.json("flare.json", function(error, flare) {
+d3.json("d3-data.json", function(error, flare) {
   root = flare;
   root.x0 = height / 2;
   root.y0 = 0;
@@ -195,3 +204,5 @@ function click(d) {
 }
 
 </script>
+</div>
+</html>
