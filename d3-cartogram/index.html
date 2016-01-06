@@ -159,8 +159,8 @@ var percent = (function() {
         })(),
         years = [1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015],
         fields = [
-//            {name: "(no scale)", id: "none"},
-            {name: "Population", id: "num_articles", key: "%d", years: years}
+        //    {name: "GDP Annual Growth", id: "gdp_growth" key: "%d", years: years, format: percent},
+            {name: "Population", id: "num_articles", key: "%d", years: years, format: "+,"}
 //            {name: "Population", id: "num_articles2001", key: "num_articles2001", format: "+,"},
         ],
         fieldsById = d3.nest()
@@ -178,6 +178,32 @@ var body = d3.select("body"),
 
 d3.select("input[type=range]").on("change", function() { year = this.value; update(); });
 d3.select("input[type=range]").on("click", function() { clearInterval(intervalId); });
+
+var fieldSelect = d3.select("#field")
+  .on("change", function(e) {
+    field = fields[this.selectedIndex];
+    location.hash = "#" + [field.id, year].join("/");
+  });
+
+fieldSelect.selectAll("option")
+  .data(fields)
+  .enter()
+  .append("option")
+    .attr("value", function(d) { return d.id; })
+    .text(function(d) { return d.name; });
+
+var yearSelect = d3.select("#year")
+  .on("change", function(e) {
+    year = years[this.selectedIndex];
+    location.hash = "#" + [field.id, year].join("/");
+  });
+
+yearSelect.selectAll("option")
+  .data(years)
+  .enter()
+  .append("option")
+    .attr("value", function(y) { return y; })
+    .text(function(y) { return y; })
 
 var intervalId = setInterval(function(){
     if (year < d3.max(years)) {

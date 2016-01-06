@@ -1,5 +1,5 @@
 /*
-Composite Template 
+Composite Template
 http://www.templatemo.com/preview/templatemo_444_composite
 */
 
@@ -107,7 +107,7 @@ body
 	display: block;
 }
 .flexslider .slides > li {
-	display: none;  
+	display: none;
 	padding: 0;
 	position: relative;
 	-webkit-backface-visibility: hidden;
@@ -381,7 +381,7 @@ body
 }
 
 a {	color: #ffa400; }
-a:hover, a:active 
+a:hover, a:active
 {
 	color: #ffd485;
 	text-decoration: none;
@@ -419,7 +419,7 @@ footer .social_icon a:hover
 /* end templatemo footer */
 
 /* starttemplatemo  go top */
-.go-top 
+.go-top
 {
 	background-color: #ffa400;
 	border-radius: 50%;
@@ -453,8 +453,8 @@ footer .social_icon a:hover
 	}
 	.flexslider h1 { font-size: 26px; }
 	.flexslider h2 { font-size: 18px; }
-	.templatemo-slider-btn { 
-		margin-top: 10px; 
+	.templatemo-slider-btn {
+		margin-top: 10px;
 		width: 180px;
 		height: 40px;
 		padding-top: 8px;
@@ -468,14 +468,140 @@ footer .social_icon a:hover
 /* end templatemo 680 media quires */
 
 /* start templatemo 600 media quires */
-@media only screen and ( max-width: 640px ) {	
+@media only screen and ( max-width: 640px ) {
 	.flexslider h1 { font-size: 20px; }
 	.flexslider h2 { font-size: 14px; }
 	.templatemo-slider-btn {
 		width: auto;
 		height: auto;
 		padding: 10px 20px;
-		margin-top: 10px; 
+		margin-top: 10px;
 	}
 }
 /* end templatemo 600 media quires */
+
+
+/*!---------- 15. IMAGE GALLERIES ----------*/
+.instafeed.grid-gallery {
+  overflow: hidden;
+  min-height: 570px;
+}
+.instafeed.grid-gallery li {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  padding: 4px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  opacity: 1;
+}
+.instafeed.grid-gallery li:nth-of-type(n+9) {
+  display: none;
+}
+.instafeed.grid-gallery li:hover {
+  opacity: .9;
+}
+.instafeed.grid-gallery.gapless li {
+  padding: 0;
+  width: 16.66667%;
+}
+.instafeed.grid-gallery.gapless li img {
+  width: 100%;
+}
+@media all and (max-width: 768px) {
+  .instafeed.grid-gallery li {
+    width: 50%;
+  }
+}
+.lightbox-grid,
+.lightbox-grid ul,
+.lightbox-grid li {
+  position: relative;
+  overflow: hidden;
+}
+.lightbox-grid li {
+  width: 25%;
+  float: left;
+  border: 8px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  opacity: 1;
+}
+.lightbox-grid li:hover {
+  opacity: .9;
+}
+.square-thumbs li {
+  height: 285px;
+}
+.third-thumbs li {
+  width: 33.33333vw;
+  height: 33vw;
+  border: none;
+}
+@media all and (max-width: 1190px) {
+  .square-thumbs li {
+    height: 235px;
+  }
+}
+@media all and (max-width: 990px) {
+  .lightbox-grid li {
+    width: 33.33333%;
+  }
+  .square-thumbs li {
+    height: 240px;
+  }
+}
+@media all and (max-width: 767px) {
+  .lightbox-grid li {
+    width: 50%;
+  }
+  .third-thumbs li {
+    height: 50vw;
+  }
+  .square-thumbs li {
+    height: 185px;
+  }
+}
+.lb-outerContainer {
+  background: none;
+  border-radius: 0;
+}
+.lightbox .lb-image {
+  border-radius: 0;
+}
+.lb-data .lb-close,
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev {
+  background: none;
+}
+.lb-data .lb-close:before,
+.lb-nav a.lb-next:before,
+.lb-nav a.lb-prev:before {
+  content: "\e646";
+  font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 24px;
+  color: #fff;
+}
+.lb-nav a.lb-next:before,
+.lb-nav a.lb-prev:before {
+  position: absolute;
+  top: 50%;
+  font-size: 32px;
+  margin-top: -16px;
+}
+.lb-nav a.lb-next:before {
+  content: "\e649";
+  right: 16px;
+}
+.lb-nav a.lb-prev:before {
+  content: "\e64a";
+  left: 16px;
+}
