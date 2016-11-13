@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Angelo Di Donato</title>
 	<meta name="keywords" content="">
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<!-- Javascript
+		================================================== -->
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.countTo.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/nivo-lightbox.min.js"></script>
+		<script src="js/jquery.easing-1.3.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.parallax.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 
 	<!-- Bootstrap CSS
    ================================================== -->
@@ -59,6 +73,68 @@
 
 	</script>
 
+	<script>
+	/* Animate Bootstrap Bar*/
+	$(document).ready(function() {
+	      $('.progress .progress-bar').css("width",
+	                function() {
+	                    return $(this).attr("aria-valuenow") + "%";
+	                }
+	        )
+	    });
+
+		/* shoyrt profession, hoby, etc. with typed */
+		$(function(){
+			$("#typed").typed({
+		        strings: [ "Web Developer.", "Data Scientist.", "Novice Photographer.", "Saxophonist.", "Sound Engineer.", "Rogue Traveler."],
+		        typeSpeed: 50,
+		        backDelay: 500,
+		        loop: true,
+		        loopCount: false,
+		  	});
+			});
+
+
+			// Counter
+		$(function() {
+		$('.counter-stats').each(function(i) {
+					$(this).appear(function() {
+						var stats = $(this).find('h1').text();
+						$(this).find('h1').countTo({from: 0, to: stats, speed: 1800, refreshInterval: 30});
+					});
+				});
+		});
+	</script>
+
+<style>
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.progress {
+  height: 35px;
+
+}
+.progress .skill {
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+</style>
 <!-- Preloader section
 ================================================== -->
 <section  class="preloader">
@@ -74,12 +150,15 @@
 	<div class="container">
 
 		<div class="navbar-header">
+
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
 			<a href="#home" class="smoothScroll navbar-brand">Angelo Di Donato</a>
+
+
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
@@ -88,102 +167,40 @@
 
 				<li><a href="#work" class="smoothScroll">WORK</a></li>
 				<li><a href="#about" class="smoothScroll">ABOUT</a></li>
-				<li><a href="#gallery" class="smoothScroll">GALLERY</a></li>
 				<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
+				<li><a href="#gallery" class="smoothScroll">GALLERY</a></li>
 				<!--li><a href="#plan" class="smoothScroll">PLANS</a></li-->
 				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
 			</ul>
 		</div>
-
 	</div>
 </section>
 
 
+
 <!-- Homepage section
 ================================================== -->
-<div id="home">
-	<div class="site-slider">
-        <ul class="bxslider">
-			<li>
-                <img src="images/slider/slide1.jpg" alt="slider image 1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="slider-caption">
-                                <!-- <h2>Plan your trip</h2>
-                                <p class="color-white">Fusce elementum nisi et magna tristique, ut facilisis magna dapibus.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider/slide2.jpg" alt="slider image 2">
-                <div class="container caption-wrapper">
-                    <div class="slider-caption">
-                        <!-- <h2>Bootstrap Layout</h2>
-                        <p class="color-white">Pellentesque mollis purus ipsum. Fusce tristique ante et est placerat dignissim.</p> -->
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider/slide3.jpg" alt="slider image 3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="slider-caption">
-                                <!-- <h2>Mobile Ready</h2>
-                                <p class="color-white">You may modify any content section as you wish.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="images/slider/slide4.jpg" alt="slider image 4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="slider-caption">
-                                <!-- <h2>Responsive Theme</h2>
-                                <p class="color-white">Phasellus ultrices, nunc et tempus porta, tellus purus elementum.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <!--li>
-                <img src="images/slider/slide5.jpg" alt="slider image 5" height="600" width="660">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="slider-caption">
-                                <!-- <h2>Download it FREE!</h2>
-                               <p class="color-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p> -->
-                            <!--/div>
-                        </div>
-                    </div>
-                </div>
-            </li-->
-        </ul> <!-- /.bxslider -->
-        <div class="bx-thumbnail-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="bx-pager">
-                            <a data-slide-index="0" href=""><img src="images/slider/thumb1.jpg" alt="thumbnail 1" /></a>
-                            <a data-slide-index="1" href=""><img src="images/slider/thumb2.jpg" alt="thumbnail 2" /></a>
-                            <a data-slide-index="2" href=""><img src="images/slider/thumb3.jpg" alt="thumbnail 3" /></a>
-                            <a data-slide-index="3" href=""><img src="images/slider/thumb4.jpg" alt="thumbnail 4" /></a>
-                            <!--a data-slide-index="4" href=""><img src="images/slider/thumb5.jpg" alt="thumbnail 5" /></a-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- /.site-slider -->
-</div>
+<section id="home" class="parallax-section">
+<!-- <div id="home"> -->
+	<div class="container-fluid">
 
+                <img src="images/home.jpg" alt="slider image 2">
+
+
+                        <div class="col-md-12">
+                            <div class="slider-caption">
+															<h1>Hi! I'm Angelo</h1>
+															<br>
+															<span id="typed"></span>
+																<span id="typed-strings">
+                            </div>
+
+                    </div>
+
+
+    </div> <!-- /.site-slider -->
+<!-- </div> -->
+</section>
 
 <!-- Work section
 ================================================== -->
@@ -197,8 +214,8 @@
 				<div class="section-title">
 					<h5 class="wow bounceIn">Angelo Di Donato</h5>
 					<h1 class="heading">WHAT I DO</h1>
-					<hr>
-					<p>Nullam a finibus dui. Nullam malesuada vitae odio et fringilla.</p>
+					<!--hr>
+					<p>Nullam a finibus dui. Nullam malesuada vitae odio et fringilla.</p-->
 				</div>
 			</div>
 
@@ -208,46 +225,122 @@
 			<div id="owl-work" class="owl-carousel">
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<i class="icon-tools medium-icon"></i>
+					<i class="icon-beaker medium-icon"></i>
 						<h3>DATA SCIENCE</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>
+							I love creating data pipelines with Apache Hadoop, Spark and coding in Python, Perl &
+							JavaScript,
+							using version control systems like Git
+							and interacting with various APIs.
+							</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
 					<i class="icon-tablet medium-icon"></i>
 						<h3>WEB DEVELOPMENT</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>
+							I have worked on the design of various websites (see mentions) including this one.
+							Most of my work cannot be showcased here as it is comprises confidential data science products.
+						</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-bike medium-icon"></i>
+					<i class="icon-camera medium-icon"></i>
 						<h3>PHOTOGRAPHY</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div>
-
-				<!--div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-music medium-icon"></i>
-						<h3>MUSIC</h3>
-						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>
+							Rookie photographer, currently focusing on travel shots,
+							see more below or instagram.
+							Most pics have been taken on IPhone, wideangles with GoPro, the rest with Canon 500D.
+						</p>
 				</div>
 
 				<div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<i class="icon-basket medium-icon"></i>
-						<h3>RECREATIONS</h3>
+					<i class="icon-adjustments medium-icon"></i>
+						<h3>MUSIC</h3>
 						<hr>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				</div-->
+						<p>Sound Engineer and Saxophone player by night.</p>
+				</div>
 
 			</div>
+
+			<div class="row">
+          <div class="col-md-12">
+            <div class="entry-content">
+              <div class="heading-title">
+                <h3 class="text-uppercase">My Skills</h3>
+              </div>
+              <p>I have a few of <strong>skills</strong>. Here they are:</p>
+
+              <!-- break -->
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Python</span>
+                </div>
+              </div>
+              <!-- break -->
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">SQL</span>
+                </div>
+              </div>
+              <!-- break -->
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">JavaScript</span>
+                </div>
+              </div>
+              <!-- break -->
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Perl</span>
+                </div>
+              </div>
+              <!-- break -->
+							<div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Unix</span>
+                </div>
+              </div>
+              <!-- break -->
+							<div class="progress skill-bar">
+                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Machine Learning</span>
+                </div>
+              </div>
+							<div class="progress skill-bar">
+                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Statistics</span>
+                </div>
+              </div>
+              <!-- break
+
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Saxophone</span>
+                </div>
+              </div>
+
+              <div class="progress skill-bar">
+                <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Photography</span>
+                </div>
+              </div>
+							<div class="progress skill-bar">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                  <span class="skill">Sound Engineering</span>
+                </div>
+              </div>
+												-->
+            </div>
+          </div>
+        </div>
 
 		</div>
 	</div>
 </section>
-
 
 <!-- About section
 ================================================== -->
@@ -263,14 +356,21 @@
 					<h1 class="heading color-white">Data Scientist</h1>
 					<hr>
 					<p class="color-white">
-					I am a data geek, passionate about big data and visualisations. I evangelise the creation of meaningful (and possibly interactive) data visualisations using FOSS such as D3.js.
+						Visualizations Hacker.
 					 </p>
 				</div>
 			</div>
 
 			<div class="col-md-6 col-sm-12">
 				<h3 class="color-white">MY STORY</h3>
-				<p class="color-white">Excepteu sunt in culpa qui officia deserunt mollit anim id. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<p class="color-white">
+					Data enthusiast, passionate about big data and visualisations, currently working at Booking.com.
+				<p class="color-white">
+					I recently worked on the design, development and implementation of a business intelligence solution
+					(~10000 users) from the backend architecture to the front end UI/UX.
+				<p class="color-white">
+					I evangelise the creation of meaningful (and possibly interactive) data visualisations using FOSS like D3.js and matplotlib.
+				</p>
 			</div>
 
 			<div class="col-md-6 col-sm-12">
@@ -292,14 +392,14 @@
 						 </div>
 				 </div>
   					<div class="panel panel-default">
-   						<div class="panel-heading" role="tab" id="headingOne">
+   						<div class="panel-heading" role="tab" id="headingTwo">
       						<h4 class="panel-title">
-        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           							Booking.com Blog
         						</a>
       						</h4>
     					</div>
-   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       						<div class="panel-body">
 										<img src="images/blog.png">
         						<p><a href="http://blog.booking.com/a-few-fun-tools-we-build-at-booking.html">Read it here</a></p>
@@ -325,14 +425,14 @@
 					 </div>
 
     				<div class="panel panel-default">
-   						<div class="panel-heading" role="tab" id="headingTwo">
+   						<div class="panel-heading" role="tab" id="headingFour">
       						<h4 class="panel-title">
-        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
           							Websites Created
         						</a>
       						</h4>
     					</div>
-   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+   						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       						<div class="panel-body">
 										<p><a href="http://lafucina.nl">La Fucina</a></p>
 										<img src="images/fucina.png">
@@ -343,133 +443,88 @@
 
  				 </div>
 			</div>
-
-			<!--div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact border-right">
-					<span>32</span>
-					<h4>TOURS</h4>
-				</div>
 			</div>
-
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact border-right">
-					<span>16</span>
-					<h4>AWARDS</h4>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact border-right">
-					<span>128</span>
-					<h4>TRIPS</h4>
-				</div>
-			</div>
-
-			<div class="col-md-3 col-sm-3 col-xs-6">
-				<div class="about-fact">
-					<span>24</span>
-					<h4>PLANS</h4>
-				</div>
-			</div>
--->
 		</div>
-	</div>
+
+		<div id="resume" class="container">
+
+			<div class="row wow bounceInUp">
+				<div class="col-md-6">
+					<h4 class="heading-with-background-light-medium"><i class="fa fa-briefcase"></i> experience</h4>
+					<ul class="experience">
+						<li class="explist">
+							<h3>Jr. Data Scientist</h3>
+							<h5>Booking.com [2015 - Current]</h5>
+							<p>
+								 Design and implement data products for internal usage (~10000 users);
+								 Author pipelines via Python/Perl and Hadoop based ETL framework;
+								 Statistical Modeling and Machine Learning;
+								 Collaborate with other engineers, data scientists, and product/business stakeholders;
+							</p>
+						</li>
+
+						<li class="explist">
+							<h3>Data & Report Specialist</h3>
+							<h5>Booking.com [2014 - 2015]</h5>
+							<p>
+								- Generate and maintain dashboards and reoccurring reports used by the entire department (~5000 users);
+								- Extract data from databases, write scripts to parse, clean, combine, and process them;
+								- Ad Hoc reports and analyses;
+								- Investigate anomalies within the data and identify patterns;
+								- Define and implement KPIs in conjunction with the business team;
+								- Develop data models and work with other Engineers and Data Scientists in improving quality and reliability;
+								- Visualize data using FOSS like D3.js;
+								- Data quality assurance.
+							</p>
+						</li>
+
+						<li class="explist">
+							<h3>Reporting Analyst</h3>
+							<h5>Booking.com [2012 - 2014]</h5>
+							<p>Interpret and communicate data results; Analyze data; Translate data requests in a PERL script or MySQL query; Collect and manage large data sets; Raise potential issues; Work on and improve performance metrics; Gather business requirements and translate them to system requirements; Proactively analyse results, current systems and processes and seek better alternatives or improvements where necessary, liaising with other departments to ensure changes are completed; Successfully manage communication and relationships with the key internal stakeholders at all levels.
+							</p>
+						</li>
+
+					</ul>
+				</div>
+
+			<div class="col-md-6">
+				<h4 class="heading-with-background-light-medium"><i class="fa fa-file-code-o"></i> certifications</h4>
+				<ul class="certifications">
+					<li class="edulist">
+						<h3>Cloudera Data Analyst</h3>
+						<h5>Cloudera [2014]</h5>
+
+					</li>
+					<li class="edulist">
+						<h3>Data Science Specialization</h3>
+						<h5>Johns Hopkins Bloomberg School of Public Health [2015]</h5>
+
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<h4 class="heading-with-background-light-medium"><i class="fa fa-book"></i> education</h4>
+				<ul class="education">
+					<li class="edulist">
+						<h3>BA Audio Engineering</h3>
+						<h5>SAE Insitute [2010 - 2013]</h5>
+
+					</li>
+					<li class="edulist">
+						<h3>Saxophone</h3>
+						<h5>Conservatorio di Musica "L. D'Annunzio" [2006]</h5>
+
+					</li>
+				</ul>
+			</div>
+
+			</div>
+		</div>
 </section>
 
 
-<!-- team section
-================================================== -->
-<section id="gallery" class="parallax-section">
-	<div class="container">
-		<div class="row">
 
-			<!-- Section title
-			==================================================-->
-			<br>
-			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-				<div class="section-title">
-					<h5 class="wow bounceIn">GALLERY</h5>
-					<h1 class="heading">MY PHOTOS</h1>
-					<hr>
-					<p>Some random photos shot on iPhone, you can find more on my instagram account.</p>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-				<div class="team-wrapper">
-					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/14574175_312122405811774_3445516773095374848_n.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>New York City</h4>
-							<ul class="social-icon">
-								<li><a href="https://www.instagram.com/p/BLGA7sShDin/" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
-				<div class="team-wrapper">
-					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/14499068_1299151040109866_3642778053995659264_n.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Amsterdam</h4>
-							<ul class="social-icon">
-								<li><a href="https://www.instagram.com/p/BLS2loQhMfh/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
-				<div class="team-wrapper">
-					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/14033032_1599668520327785_1398946291_n.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Sintra</h4>
-							<ul class="social-icon">
-								<li><a href="https://www.instagram.com/p/BJa-ENKBPiP/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-				<div class="team-wrapper">
-					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/13277844_1091198880939028_1208599416_n.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Castel Frentano</h4>
-							<ul class="social-icon">
-								<li><a href="https://www.instagram.com/p/BGOnMe2BZsy/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
-				<div class="team-wrapper">
-					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/13584265_505629286298694_396875894_n.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Paris</h4>
-							<ul class="social-icon">
-								<li><a href="https://www.instagram.com/p/BHdW4Wyhf0L/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
-				<div class="team-wrapper">
-					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/1172670_448508455343444_1381890919_n.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Hogsback</h4>
-							<ul class="social-icon">
-								<li><a href="https://www.instagram.com/p/BALIeoDBZvX/" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
-							</ul>
-						</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
 
 <!-- Portfolio section
 ================================================== -->
@@ -488,8 +543,9 @@
 				</div>
 			</div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
 				<div class="grid">
+					<a href="facebook/fb-redirected2.html" target="_blank">
               		<figure class="effect-zoe">
 						<img src="images/friend_network.jpg" alt="portfolio img"/>
 							<figcaption>
@@ -502,8 +558,9 @@
 				</div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
 				<div class="grid">
+					<a href="d3-cartogram/" target="_blank">
               		<figure class="effect-zoe">
 						<img src="images/cartogram.jpg" alt="portfolio img"/>
 							<figcaption>
@@ -516,8 +573,9 @@
 				</div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
 				<div class="grid">
+					<a href="facebook/sticky.html" target="_blank">
               		<figure class="effect-zoe">
 						<img src="images/sticky.jpg" alt="portfolio img"/>
 							<figcaption>
@@ -530,8 +588,9 @@
 				</div>
             </div>
 
-          	<div class="col-md-4 col-sm-6">
+          	<div class="col-md-4 col-sm-4">
 				<div class="grid">
+					<a href="linkedin/collapsible_tree.html" target="_blank">
               		<figure class="effect-zoe">
 						<img src="images/link.jpg" alt="portfolio img"/>
 							<figcaption>
@@ -544,10 +603,11 @@
 				</div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
 				<div class="grid">
+					<a href="deep/angkor_video.html" target="_blank">
               		<figure class="effect-zoe">
-						<img src="images/angkor_.jpg" alt="portfolio img"/>
+						<img src="images/angkor_.jpg" alt="portfolio img"/></a>
 							<figcaption>
 								<h2>Deep Video</h2>
 								<p class="icon-links">
@@ -558,8 +618,9 @@
 				</div>
             </div>
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-4">
 				<div class="grid">
+					<a href="deep/bagan.html" target="_blank">
               		<figure class="effect-zoe">
 						<img src="images/bagan_.jpg" alt="portfolio img"/>
 							<figcaption>
@@ -571,23 +632,31 @@
 					</figure>
 				</div>
             </div>
+					</div>
+		</div>
+
 						<div class="portfolio-bottom">
+						<div class="container">
 						<div class="row">
 							<h2>GITHUB REPOs</h2>
 								<div class="col-md-12 col-sm-12">
 								<div class="github-card" data-github="adidonato" data-width="400" data-height="318" data-theme="medium"></div>
 								<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+					</div>
+				</div>
+
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
 							<div class="github-card" data-github="adidonato/language-hql" data-width="400" data-height="202" data-theme="default"></div>
 							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 col-sm-12"
 							<div class="github-card" data-github="adidonato/xmppy-multicast" data-width="400" data-height="202" data-theme="default"></div>
 							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 							<div class="github-card" data-github="adidonato/dotfiles" data-width="400" data-height="202" data-theme="default"></div>
 							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 							<div class="github-card" data-github="adidonato/dmt-screensavers" data-width="400" data-height="202" data-theme="default"></div>
+						</div>
+						<div class="col-md-12 col-sm-12">
 							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 							<div class="github-card" data-github="adidonato/linkedin_connections_tree" data-width="400" data-height="202" data-theme="default"></div>
 							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
@@ -597,11 +666,12 @@
 							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 				</div>
 			</div>
-			</div>
+
 
             <!-- Portfolio bottom section
 			================================================== -->
-            <div class="col-md-offset-2 col-md-8 col-sm-12">
+			<div class="row">
+            <div class="col-md-12 col-sm-12">
             	<div class="portfolio-bottom">
             		<h2>INTERESTED?</h2>
 					<a href="#contact" class="smoothScroll btn btn-default">CONTACT</a>
@@ -612,6 +682,99 @@
 	</div>
 </section>
 
+<!-- gallery section
+================================================== -->
+<section id="gallery" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			==================================================-->
+			<br>
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+				<div class="section-title">
+					<h5 class="wow bounceIn">GALLERY</h5>
+					<h1 class="heading">MY PHOTOS</h1>
+					<hr>
+					<p>Some random photos shot on iPhone, you can find more on my instagram account.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="gallery-wrapper">
+					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/14574175_312122405811774_3445516773095374848_n.jpg" class="img-responsive" alt="gallery img">
+						<div class="gallery-des">
+							<h4>New York City</h4>
+							<ul class="social-icon">
+								<li><a href="https://www.instagram.com/p/BLGA7sShDin/" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
+				<div class="gallery-wrapper">
+					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/14499068_1299151040109866_3642778053995659264_n.jpg" class="img-responsive" alt="gallery img">
+						<div class="gallery-des">
+							<h4>Amsterdam</h4>
+							<ul class="social-icon">
+								<li><a href="https://www.instagram.com/p/BLS2loQhMfh/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
+				<div class="gallery-wrapper">
+					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/14033032_1599668520327785_1398946291_n.jpg" class="img-responsive" alt="gallery img">
+						<div class="gallery-des">
+							<h4>Sintra</h4>
+							<ul class="social-icon">
+								<li><a href="https://www.instagram.com/p/BJa-ENKBPiP/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="gallery-wrapper">
+					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/13277844_1091198880939028_1208599416_n.jpg" class="img-responsive" alt="gallery img">
+						<div class="gallery-des">
+							<h4>Castel Frentano</h4>
+							<ul class="social-icon">
+								<li><a href="https://www.instagram.com/p/BGOnMe2BZsy/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
+				<div class="gallery-wrapper">
+					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/13584265_505629286298694_396875894_n.jpg" class="img-responsive" alt="gallery img">
+						<div class="gallery-des">
+							<h4>Paris</h4>
+							<ul class="social-icon">
+								<li><a href="https://www.instagram.com/p/BHdW4Wyhf0L/?taken-by=outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
+				<div class="gallery-wrapper">
+					<img src="https://scontent-amt2-1.cdninstagram.com/t51.2885-15/e35/1172670_448508455343444_1381890919_n.jpg" class="img-responsive" alt="gallery img">
+						<div class="gallery-des">
+							<h4>Hogsback</h4>
+							<ul class="social-icon">
+								<li><a href="https://www.instagram.com/p/BALIeoDBZvX/" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s"></a></li>
+							</ul>
+						</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
 
 <!-- Plan section
 ================================================== -->
@@ -691,9 +854,7 @@
 
 <!-- Contact section
 ================================================== -->
-<section id="contact" class="parallax-section">
-	<div class="container">
-		<div class="row">
+
 
 			<!-- Section title
 			================================================== -->
@@ -708,28 +869,37 @@
 
 			<!-- Contact form section
 			================================================== -->
-			<!--div class="col-md-offset-1 col-md-10 col-sm-12">
-				<form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.6s">
-					<div class="col-md-4 col-sm-6">
-						<input type="text" class="form-control" placeholder="Name" name="name">
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<input type="email" class="form-control" placeholder="Email" name="email">
-					</div>
-					<div class="col-md-4 col-sm-12">
-						<input type="text" class="form-control" placeholder="Subject" name="subject">
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<textarea class="form-control" placeholder="Message" rows="7" name"message"></textarea>
-					</div>
-					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
-						<input type="submit" class="form-control" value="SHOOT MESSAGE">
-					</div>
-				</form>
+
+				<!-- FACTS -->
+	<section id="facts" class="facts">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-sm-3 counter-stats">
+					<h1>5</h1>
+					<p>years experience</p>
+				</div>
+				<div class="col-sm-3 counter-stats">
+					<h1>24</h1>
+					<p>github repositories</p>
+				</div>
+				<div class="col-sm-3 counter-stats">
+					<h1>20000</h1>
+					<p>people reached on stackoverflow</p>
+				</div>
+				<div class="col-sm-3 counter-stats">
+					<h1>10000</h1>
+					<p>users of data science products</p>
+				</div>
 			</div>
+		</div>
+	</section>
+
 
 			<!-- Contact detail section
 			================================================== -->
+	<section id="contact" class="parallax-section">
+		<div class="container">
+			<div class="row">
 			<div class="contact-detail col-md-12 col-sm-12">
 				<div class="col-md-6 col-sm-6">
 					<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
@@ -753,16 +923,16 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
 
-
 				<ul class="social-icon">
-					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
-					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
-					<li><a href="#" class="fa fa-stack-overflow wow fadeIn" data-wow-delay="0.9s"></a></li>
-					<li><a href="#" class="fa fa-linkedin wow fadeIn" data-wow-delay="1s"></a></li>
-					<li><a href="#" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
-					<li><a href="#" class="fa fa-instagram wow fadeIn" data-wow-delay="1.6s"></a></li>
+					<li><a href="https://www.facebook.com/XY23498754621" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="https://www.twitter.com/outofbabylon" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="http://stackoverflow.com/users/4909275/angelo-di-donato" class="fa fa-stack-overflow wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="https://www.linkedin.com/in/angelodidonato" class="fa fa-linkedin wow fadeIn" data-wow-delay="1s"></a></li>
+					<li><a href="https://github.com/adidonato" class="fa fa-github wow fadeIn" data-wow-delay="1.3s"></a></li>
+					<li><a href="https://instagram.com/outofbabylon" class="fa fa-instagram wow fadeIn" data-wow-delay="1.6s"></a></li>
+					<li><a href="https://telegram.me/adidonato" class="fa fa-whatsapp wow fadeIn" data-wow-delay="1.6s"></a></li>
 				</ul>
-				<b><p> Website Under Contruction </p></b>
+				<b><p> Website Still Kind Of Under Contruction </p></b>
 				<p>Copyright &copy; 2016 Angelo Di Donato</p>
 
 			</div>
@@ -771,18 +941,6 @@
 </footer>
 
 
-<!-- Javascript
-================================================== -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/nivo-lightbox.min.js"></script>
-<script src="js/jquery.easing-1.3.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.parallax.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
 
 </body>
 </html>

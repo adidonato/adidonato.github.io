@@ -2,7 +2,7 @@
  /* jQuery Preloader
   -----------------------------------------------*/
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(1000); // set duration in brackets
 });
 
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
       itemsDesktopSmall : [979,3],
     });
   });
-  
+
 
   /* Parallax section
     -----------------------------------------------*/
@@ -87,9 +87,15 @@ $(document).ready(function() {
 
   /* Nivo lightbox
     -----------------------------------------------*/
+
+$( document ).ready( function()
+{
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent) == false) {
   $('#portfolio .col-md-4 a').nivoLightbox({
         effect: 'fadeScale',
     });
+  }
+});
 
 
   /* wow
@@ -98,3 +104,15 @@ $(document).ready(function() {
 
   });
 
+  var lightboxOnResize = function lightboxOnResize() {
+     if ($(window).width() < 960) {
+         $('a[rel="#portfolio"]')
+             .removeProp('rel')
+             .addClass('lightboxRemoved');
+     } else {
+         $('a.lightboxRemoved').prop('rel', '#portfolio');
+     }
+ };
+
+ $(document).ready(lightboxOnResize);
+ $(window).resize(lightboxOnResize);
