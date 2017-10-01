@@ -23,6 +23,7 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+		<script src="js/directorySlider.js"></script>
 
 	<!-- Bootstrap CSS
    ================================================== -->
@@ -82,6 +83,10 @@
 	                }
 	        )
 	    });
+  /*change home photo loop */
+		// $(function(){
+		//   $('#home').directorySlider({filebase: '', extension: 'jpg', directory: 'images/zoom/_resized/', numslides: 99, speed: 1, timeout: 1, width: 2400, height: 2400});
+		//  });
 
 		/* shoyrt profession, hoby, etc. with typed */
 		$(function(){
@@ -100,10 +105,11 @@
 		$('.counter-stats').each(function(i) {
 					$(this).appear(function() {
 						var stats = $(this).find('h1').text();
-						$(this).find('h1').countTo({from: 0, to: stats, speed: 1800, refreshInterval: 30});
+						$(this).find('h1').countTo({from: 0, to: stats, speed: 1800, refreshInterval: 0.1});
 					});
 				});
 		});
+
 	</script>
 
 <style>
@@ -183,8 +189,8 @@ img {
 <section id="home" class="parallax-section">
 <!-- <div id="home"> -->
 	<div class="container-fluid">
-
-                <img src="images/home.jpg" alt="slider image 2">
+<div class="directorySlider">
+                <img src="images/home.jpg" alt="slider image 2" style="visibility: hidden !important;">
 
 
                         <div class="col-md-12">
@@ -196,6 +202,7 @@ img {
                             </div>
 
                     </div>
+										</div>
 
 
     </div> <!-- /.site-slider -->
@@ -391,15 +398,31 @@ img {
 								</div>
 						 </div>
 				 </div>
+				 <div class="panel panel-default">
+					 <div class="panel-heading" role="tab" id="headingTwo">
+							 <h4 class="panel-title">
+								 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+										 Github
+								 </a>
+							 </h4>
+					 </div>
+					 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							 <div class="panel-body">
+								 <div class="github-card" data-github="adidonato" data-width="400" data-height="100" data-theme="default"></div>
+ 								<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+							 </div>
+						</div>
+				</div>
   					<div class="panel panel-default">
-   						<div class="panel-heading" role="tab" id="headingTwo">
+   						<div class="panel-heading" role="tab" id="headingThree">
       						<h4 class="panel-title">
-        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        					 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
           							Booking.com Blog
         						</a>
       						</h4>
     					</div>
-   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+   						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       						<div class="panel-body">
 										<img src="images/blog.png">
         						<p><a href="http://blog.booking.com/a-few-fun-tools-we-build-at-booking.html">Read it here</a></p>
@@ -408,14 +431,14 @@ img {
  					 </div>
 
 					 <div class="panel panel-default">
-					 	 <div class="panel-heading" role="tab" id="headingThree">
+					 	 <div class="panel-heading" role="tab" id="headingFour">
 					 			 <h4 class="panel-title">
-					 				 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+					 				 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
 					 						 Booking.com Video
 					 				 </a>
 					 			 </h4>
 					 	 </div>
-					 	 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					 	 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
 					 			 <div class="panel-body">
 					 				 <p>Visualization at 1:34.</p>
 					 				 <p><a href="https://youtu.be/jeorh0qDf8o?t=1m34s">Watch</a></p>
@@ -425,20 +448,21 @@ img {
 					 </div>
 
     				<div class="panel panel-default">
-   						<div class="panel-heading" role="tab" id="headingFour">
+   						<div class="panel-heading" role="tab" id="headingFive">
       						<h4 class="panel-title">
-        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
           							Websites Created
         						</a>
       						</h4>
     					</div>
-   						<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+   						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
       						<div class="panel-body">
-										<p><a href="http://lafucina.nl">La Fucina</a></p>
+										<p><a href="#">La Fucina</a></p>
 										<img src="images/fucina.png">
-
-      						</div>
-   						 </div>
+ 										<p><a href="http://circleblossom.com">Circle Blossom</a></p>
+ 										<img src="http://circleblossom.com/assets/images2/logo.png">
+									</div>
+							 </div>
  					 </div>
 
  				 </div>
@@ -449,23 +473,29 @@ img {
 		<div id="resume" class="container">
 
 			<div class="row wow bounceInUp">
-				<div class="col-md-6">
-					<h4 class="heading-with-background-light-medium"><i class="fa fa-briefcase"></i> experience</h4>
+				<div class="col-md-4">
+					<h4 href="#0" data-toggle="collapse" class="heading-with-background-light-medium"><i class="fa fa-briefcase"></i> experience</h4>
+					<div id="0" class="collapse">
 					<ul class="experience">
-						<li class="explist">
-							<h3>Jr. Data Scientist</h3>
+						<!-- <li class="explist"> -->
+							<h3 href="#1" data-toggle="collapse">Jr. Data Scientist</h3>
 							<h5>Booking.com [2015 - Current]</h5>
+<div id="1" class="collapse">
+							<!-- <h3>Jr. Data Scientist</h3> -->
+
 							<p>
 								 Design and implement data products for internal usage (~10000 users);
 								 Author pipelines via Python/Perl and Hadoop based ETL framework;
 								 Statistical Modeling and Machine Learning;
 								 Collaborate with other engineers, data scientists, and product/business stakeholders;
 							</p>
-						</li>
-
-						<li class="explist">
-							<h3>Data & Report Specialist</h3>
+						<!-- </li> -->
+</div>
+						<!-- <li class="explist"> -->
+							<h3 href="#2" data-toggle="collapse">Data & Report Specialist</h3>
 							<h5>Booking.com [2014 - 2015]</h5>
+							<div id="2" class="collapse">
+
 							<p>
 								- Generate and maintain dashboards and reoccurring reports used by the entire department (~5000 users);
 								- Extract data from databases, write scripts to parse, clean, combine, and process them;
@@ -476,48 +506,55 @@ img {
 								- Visualize data using FOSS like D3.js;
 								- Data quality assurance.
 							</p>
-						</li>
-
-						<li class="explist">
-							<h3>Reporting Analyst</h3>
+						<!-- </li> -->
+</div>
+						<!-- <li class="explist"> -->
+							<h3 href="#3" data-toggle="collapse">Reporting Analyst</h3>
 							<h5>Booking.com [2012 - 2014]</h5>
+							<div id="3" class="collapse">
+
 							<p>Interpret and communicate data results; Analyze data; Translate data requests in a PERL script or MySQL query; Collect and manage large data sets; Raise potential issues; Work on and improve performance metrics; Gather business requirements and translate them to system requirements; Proactively analyse results, current systems and processes and seek better alternatives or improvements where necessary, liaising with other departments to ensure changes are completed; Successfully manage communication and relationships with the key internal stakeholders at all levels.
 							</p>
-						</li>
-
+						<!-- </li> -->
+</div>
 					</ul>
 				</div>
+				</div>
 
-			<div class="col-md-6">
-				<h4 class="heading-with-background-light-medium"><i class="fa fa-file-code-o"></i> certifications</h4>
+			<div class="col-md-4">
+				<h4 href="#4" data-toggle="collapse" class="heading-with-background-light-medium"><i class="fa fa-file-code-o"></i> certifications</h4>
+<div id="4" class="collapse">
 				<ul class="certifications">
-					<li class="edulist">
+					<!-- <li class="edulist"> -->
 						<h3>Cloudera Data Analyst</h3>
 						<h5>Cloudera [2014]</h5>
 
-					</li>
-					<li class="edulist">
+					<!-- </li> -->
+					<!-- <li class="edulist"> -->
 						<h3>Data Science Specialization</h3>
 						<h5>Johns Hopkins Bloomberg School of Public Health [2015]</h5>
 
-					</li>
+					<!-- </li> -->
 				</ul>
 			</div>
-			<div class="col-md-6">
-				<h4 class="heading-with-background-light-medium"><i class="fa fa-book"></i> education</h4>
+		</div>
+			<div class="col-md-4">
+				<h4 href="#6" data-toggle="collapse" class="heading-with-background-light-medium"><i class="fa fa-book"></i> education</h4>
+<div id="6" class="collapse">
 				<ul class="education">
-					<li class="edulist">
+					<!-- <li class="edulist"> -->
 						<h3>BA Audio Engineering</h3>
 						<h5>SAE Insitute [2010 - 2013]</h5>
 
-					</li>
-					<li class="edulist">
+					<!-- </li> -->
+					<!-- <li class="edulist"> -->
 						<h3>Saxophone</h3>
 						<h5>Conservatorio di Musica "L. D'Annunzio" [2006]</h5>
 
-					</li>
+					<!-- </li> -->
 				</ul>
 			</div>
+</div>
 
 			</div>
 		</div>
@@ -635,39 +672,6 @@ img {
 					</div>
 		</div>
 
-						<div class="portfolio-bottom">
-						<div class="container">
-						<div class="row">
-							<h2>GITHUB REPOs</h2>
-								<div class="col-md-12 col-sm-12">
-								<div class="github-card" data-github="adidonato" data-width="400" data-height="318" data-theme="medium"></div>
-								<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-					</div>
-				</div>
-
-					<div class="row">
-						<div class="col-md-12 col-sm-12">
-							<div class="github-card" data-github="adidonato/language-hql" data-width="400" data-height="202" data-theme="default"></div>
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-							<div class="github-card" data-github="adidonato/xmppy-multicast" data-width="400" data-height="202" data-theme="default"></div>
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-							<div class="github-card" data-github="adidonato/dotfiles" data-width="400" data-height="202" data-theme="default"></div>
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-							<div class="github-card" data-github="adidonato/dmt-screensavers" data-width="400" data-height="202" data-theme="default"></div>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-							<div class="github-card" data-github="adidonato/linkedin_connections_tree" data-width="400" data-height="202" data-theme="default"></div>
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-							<div class="github-card" data-github="adidonato/spotify_playlist" data-width="400" data-height="202" data-theme="default"></div>
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-							<div class="github-card" data-github="adidonato/facebook-network-graph" data-width="400" data-height="202" data-theme="default"></div>
-							<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-				</div>
-			</div>
-
-
             <!-- Portfolio bottom section
 			================================================== -->
 			<div class="row">
@@ -694,9 +698,9 @@ img {
 			<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
 				<div class="section-title">
 					<h5 class="wow bounceIn">GALLERY</h5>
-					<h1 class="heading">MY PHOTOS</h1>
+					<h1 class="heading">PHOTOS</h1>
 					<hr>
-					<p>Some random photos shot on iPhone, you can find more on my instagram account.</p>
+					<p>Some random photos shot on iPhone, you can find more on my <a href="https://instagram.com/outofbabylon">instagram</a> account.</p>
 				</div>
 			</div>
 
@@ -833,7 +837,7 @@ img {
 				<div class="plan">
 					<h2 class="plan-title">Explorer</h2>
 					<div class="plan-price">
-						<h1 class="plan-price-title">$1,400 / <small>trip</small></h1>
+						<h1 class="plan-price-title">$1,200 / <small>trip</small></h1>
 					</div>
 					<ul class="plan-list">
 						<li>12 days 11 nights</li>
@@ -875,7 +879,7 @@ img {
 		<div class="container">
 			<div class="row text-center">
 				<div class="col-sm-3 counter-stats">
-					<h1>5</h1>
+					<h1>6</h1>
 					<p>years experience</p>
 				</div>
 				<div class="col-sm-3 counter-stats">
@@ -883,7 +887,7 @@ img {
 					<p>github repositories</p>
 				</div>
 				<div class="col-sm-3 counter-stats">
-					<h1>20000</h1>
+					<h1>45000</h1>
 					<p>people reached on stackoverflow</p>
 				</div>
 				<div class="col-sm-3 counter-stats">

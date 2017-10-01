@@ -34,6 +34,16 @@
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
+
+@keyframes shrink {
+  0% {
+    background-size: 110% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
@@ -161,6 +171,16 @@ hr {
 
 #gallery, #portfolio, #contact {
   text-align: center;
+}
+
+#home {
+  animation-direction: alternate;
+  animation: shrink 5s infinite alternate;
+  background-image: url(/images/home.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
 }
 
 .parallax-section {
@@ -422,7 +442,8 @@ hr {
 /* about section styles
 /* ========================================== */
 #about {
-  background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('https://static.pexels.com/photos/14676/pexels-photo-14676.png') 50% 0 repeat-y fixed;
+  /*background: url('../images/about-bg.jpg') 50% 0 repeat-y fixed;*/
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
