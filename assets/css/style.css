@@ -1,3 +1,10 @@
+
+/*@import url('https://static.pexels.com/photos/14676/pexels-photo-14676.png');*/
+/*@import url('{{ site.baseurl }}{% link assets/images/home.jpg %}');*/
+/*@import url('/assets/images/home.jpg');*/
+/*@import url("animate.min.css");*/
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -187,10 +194,11 @@ hr {
 #home {
   animation-direction: alternate;
   animation: shrink 5s infinite alternate;
-  background-image: url(/images/home.jpg);
+  background: url('/assets/images/home.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  background-position: center;
    background-size: cover;
 }
 

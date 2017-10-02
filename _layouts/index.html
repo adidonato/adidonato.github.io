@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	{% include head.html %}
+
+
+	<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+			{% include scripts.html %}
+			{% include custom-scripts.html %}
+			{% include preloader.html %}
+
+			{% include header.html %}
+
+			{{ content }}
+
+			{% include footer.html %}
+
+			{% include totop.html %}
+
+
+
+
+
+	</body>
+
+</html>
