@@ -1,3 +1,4 @@
+_site/
 backup/*
 images/zoom/*
 *.DS_Store*

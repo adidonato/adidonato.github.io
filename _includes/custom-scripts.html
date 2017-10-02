@@ -1,0 +1,37 @@
+<script>
+	/* Animate Bootstrap Bar*/
+	$(document).ready(function() {
+	      $('.progress .progress-bar').css("width",
+	                function() {
+	                    return $(this).attr("aria-valuenow") + "%";
+	                }
+	        )
+	    });
+  /*change home photo loop */
+		// $(function(){
+		//   $('#home').directorySlider({filebase: '', extension: 'jpg', directory: 'images/zoom/_resized/', numslides: 99, speed: 1, timeout: 1, width: 2400, height: 2400});
+		//  });
+
+		/* shoyrt profession, hoby, etc. with typed */
+		$(function(){
+			$("#typed").typed({
+		        strings: [ "Web Developer.", "Data Scientist.", "Novice Photographer.", "Saxophonist.", "Sound Engineer.", "Rogue Traveler."],
+		        typeSpeed: 50,
+		        backDelay: 500,
+		        loop: true,
+		        loopCount: false,
+		  	});
+			});
+
+
+			// Counter
+		$(function() {
+		$('.counter-stats').each(function(i) {
+					$(this).appear(function() {
+						var stats = $(this).find('h1').text();
+						$(this).find('h1').countTo({from: 0, to: stats, speed: 1800, refreshInterval: 0.1});
+					});
+				});
+		});
+
+	</script>

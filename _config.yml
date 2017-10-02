@@ -1,0 +1,12 @@
+---
+title: angelodidonato.com
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+permalink: "/notes/:year/:month/:day/:title"
+markdown: kramdown
