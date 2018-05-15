@@ -15,7 +15,7 @@
 		/* shoyrt profession, hoby, etc. with typed */
 		$(function(){
 			$("#typed").typed({
-		        strings: [ "Web Developer.", "Data Scientist.", "Novice Photographer.", "Saxophonist.", "Sound Engineer.", "Rogue Traveler."],
+		        strings: [ "Web Developer.", "Data Scientist.", "Sound Engineer.", "Blockchain Enthusiast."],
 		        typeSpeed: 50,
 		        backDelay: 500,
 		        loop: true,
@@ -33,5 +33,10 @@
 					});
 				});
 		});
-
+	</script>
+  <script>
+	window.onload = function(){
+		var date = new Date().getFullYear();
+		document.getElementById("year").innerHTML = date;
+  }
 	</script>
