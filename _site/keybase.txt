@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/adidonato
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://angelodidonato.com
+  * I am adidonato (https://keybase.io/adidonato) on keybase.
+  * I have a public key ASD1aLEnE7kEjcIryUo-gzc0K715sfuf16KH7rzvKm9f7wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f568b12713b9048dc22bc94a3e8337342bbd79b1fb9fd7a287eebcef2a6f5fef0a",
+      "host": "keybase.io",
+      "kid": "0120f568b12713b9048dc22bc94a3e8337342bbd79b1fb9fd7a287eebcef2a6f5fef0a",
+      "uid": "e406403dace7a137f2bd2ee81e556619",
+      "username": "adidonato"
+    },
+    "merkle_root": {
+      "ctime": 1530702051,
+      "hash": "35a51814fbeaecd236efb4be284cae82d9b2a3d4a1b2dcec24131d9b49e4052b76aeb65c0bfb0fc8ec5ed34a12964bfa94f460010725a3fc6046b2018158f9f3",
+      "hash_meta": "b1df9a645face679775d9b7424ee39ef2331642c60eb40edf5b2520b95c05b2c",
+      "seqno": 3198481
+    },
+    "service": {
+      "entropy": "XP7uAWCnpOZ78a7YxnEOv0ZA",
+      "hostname": "angelodidonato.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.1.2"
+  },
+  "ctime": 1530702059,
+  "expire_in": 504576000,
+  "prev": "693984294dbfd73606cc5259f577ce3359d54a5deb4eb720400147bf304447ac",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg9WixJxO5BI3CK8lKPoM3NCu9ebH7n9eih+687ypvX+8Kp3BheWxvYWTESpcCCMQgaTmEKU2/1zYGzFJZ9XfOM1nVSl3rTrcgQAFHvzBER6zEIFtXmelgx7dUkSs+hyKhdo/cIzzgaVquvr9hPn4Ys3xXAgHCo3NpZ8RATRc1zF4e5iCFyW8FOIHR47fnutyKGdGCkTg6O/1P13xvsVaRrsQLWrkB7aM33WODbIKl4UZm0yHZnkFw4edgAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBIzs5kMqLM93YOziYE70G2y9x0Uo4szjzLRn6/OOEoZo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adidonato
+
+==================================================================

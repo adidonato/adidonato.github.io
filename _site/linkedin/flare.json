@@ -1,0 +1,826 @@
+{
+ "name": "My LinkedIn", 
+ "children": [
+  {
+   "name": "Marketeer", 
+   "children": [
+    {
+     "name": "Claudia Tangelder"
+    }, 
+    {
+     "name": "Marvin Visser"
+    }
+   ]
+  }, 
+  {
+   "name": "Owner", 
+   "children": [
+    {
+     "name": "Vitezslav Koko Kohout"
+    }, 
+    {
+     "name": "Isabelle Ross"
+    }, 
+    {
+     "name": "Maarten Fugers"
+    }, 
+    {
+     "name": "Fabrizio Salzano"
+    }, 
+    {
+     "name": "maria scerbikova"
+    }, 
+    {
+     "name": "Mansi Narang"
+    }, 
+    {
+     "name": "Sophie Parker"
+    }, 
+    {
+     "name": "Aelia& Maelis"
+    }, 
+    {
+     "name": "Erica Gasparini"
+    }, 
+    {
+     "name": "Angelica Vigilante"
+    }, 
+    {
+     "name": "Lukas Vermeer"
+    }, 
+    {
+     "name": "Sebastian Honores Espejo"
+    }, 
+    {
+     "name": "Anniek Veltman"
+    }, 
+    {
+     "name": "Kseniia Ignatovych"
+    }, 
+    {
+     "name": "Andrea Carini"
+    }, 
+    {
+     "name": "Stefania Chiorboli"
+    }, 
+    {
+     "name": "Tim Kuis"
+    }, 
+    {
+     "name": "Ignazio Civello (Iggy)"
+    }
+   ]
+  }, 
+  {
+   "name": "Developer", 
+   "children": [
+    {
+     "name": "Piotr Jackowski"
+    }, 
+    {
+     "name": "Zhan Shi"
+    }, 
+    {
+     "name": "Chris Eade"
+    }, 
+    {
+     "name": "Burak G\ufffdrsoy"
+    }, 
+    {
+     "name": "Mustafa El-Helbawy"
+    }, 
+    {
+     "name": "Andrea Guzzo"
+    }, 
+    {
+     "name": "John Loemban Tobing"
+    }, 
+    {
+     "name": "Supraja Jayakumar"
+    }, 
+    {
+     "name": "Yves Orton"
+    }, 
+    {
+     "name": "Ruud H.G. van Tol"
+    }, 
+    {
+     "name": "Nick van Dijk"
+    }, 
+    {
+     "name": "Dan-el Khen"
+    }, 
+    {
+     "name": "Steven Oliemans"
+    }, 
+    {
+     "name": "Ryan Bastic"
+    }, 
+    {
+     "name": "Menno Blom"
+    }, 
+    {
+     "name": "Marvin Visser"
+    }, 
+    {
+     "name": "David Morel"
+    }, 
+    {
+     "name": "Fernando Vezzosi"
+    }, 
+    {
+     "name": "Milber Ferreira"
+    }, 
+    {
+     "name": "Eric Herman"
+    }
+   ]
+  }, 
+  {
+   "name": "Media, Social", 
+   "children": [
+    {
+     "name": "Li Min"
+    }, 
+    {
+     "name": "Lissa Ann Polanco"
+    }
+   ]
+  }, 
+  {
+   "name": "", 
+   "children": [
+    {
+     "name": "Brian Tromp"
+    }, 
+    {
+     "name": "David Moreno"
+    }, 
+    {
+     "name": "Katia Tubis Ludovico"
+    }, 
+    {
+     "name": "Megan Anderson"
+    }, 
+    {
+     "name": "Robert Ahearn"
+    }, 
+    {
+     "name": "Daniel Haslop"
+    }, 
+    {
+     "name": "Jiri Ulrich"
+    }, 
+    {
+     "name": "Jean-Marc Lempereur"
+    }, 
+    {
+     "name": "Achille Regazzoni"
+    }, 
+    {
+     "name": "Gena Panich"
+    }, 
+    {
+     "name": "Heide Kuepker"
+    }, 
+    {
+     "name": "Chris Eade"
+    }, 
+    {
+     "name": "Nora K\ufffdthe"
+    }, 
+    {
+     "name": "Jamie Martin"
+    }, 
+    {
+     "name": "Eli Pridonoff"
+    }, 
+    {
+     "name": "Alessandro Piemonte"
+    }, 
+    {
+     "name": "Avi Tavdi"
+    }, 
+    {
+     "name": "Thomas Davey"
+    }, 
+    {
+     "name": "Ivan Stynes"
+    }, 
+    {
+     "name": "Carl Johan Gustavsson"
+    }, 
+    {
+     "name": "Jos\ufffd Pedro Marques"
+    }, 
+    {
+     "name": "Marie-Christine Osterop"
+    }, 
+    {
+     "name": "Dan Teo"
+    }, 
+    {
+     "name": "Danah Bsaiso"
+    }, 
+    {
+     "name": "Nad\ufffdge Soubie"
+    }, 
+    {
+     "name": "Elena de angelis"
+    }, 
+    {
+     "name": "Adil Gzouny"
+    }, 
+    {
+     "name": "steven armit"
+    }, 
+    {
+     "name": "Pedro Silva"
+    }, 
+    {
+     "name": "Jonathan Ong"
+    }, 
+    {
+     "name": "Cindy Elenbaas, SPHR"
+    }, 
+    {
+     "name": "Chengjie Zhang"
+    }, 
+    {
+     "name": "Sarah Quinlan"
+    }, 
+    {
+     "name": "George Brown"
+    }, 
+    {
+     "name": "Timur Mingulov"
+    }, 
+    {
+     "name": "FM Mok"
+    }, 
+    {
+     "name": "Erik Benson"
+    }, 
+    {
+     "name": "Ana Arandjelovic"
+    }, 
+    {
+     "name": "Vladimir Sterngold"
+    }, 
+    {
+     "name": "Saskia Armee"
+    }, 
+    {
+     "name": "Robbert Huisman"
+    }, 
+    {
+     "name": "James Whitemore"
+    }, 
+    {
+     "name": "Diana Mendes"
+    }, 
+    {
+     "name": "Roderik Koenders"
+    }, 
+    {
+     "name": "Alan Themudo"
+    }, 
+    {
+     "name": "Marion Fujii"
+    }, 
+    {
+     "name": "Jan Heldewier"
+    }, 
+    {
+     "name": "Eleni Chanioti"
+    }, 
+    {
+     "name": "Joakim Lundborg"
+    }, 
+    {
+     "name": "Alan Curbishley"
+    }, 
+    {
+     "name": "Nimrod Raiman"
+    }, 
+    {
+     "name": "Lillia Valeva"
+    }, 
+    {
+     "name": "Stevanna Yau-Peekstok"
+    }, 
+    {
+     "name": "Miriam Wempe"
+    }, 
+    {
+     "name": "Vanesa Giraldo"
+    }, 
+    {
+     "name": "Kenneth LaRoche"
+    }, 
+    {
+     "name": "K\ufffdroly Nagy"
+    }, 
+    {
+     "name": "Patrick du Cloo"
+    }, 
+    {
+     "name": "Kirk Kohlrus"
+    }, 
+    {
+     "name": "Andrew Haines"
+    }, 
+    {
+     "name": "Charles Sutton"
+    }, 
+    {
+     "name": "Hans Tool"
+    }, 
+    {
+     "name": "Jorge \ufffdlvarez-Vald\ufffds Gim\ufffdnez"
+    }, 
+    {
+     "name": "Stefano Ceccon"
+    }, 
+    {
+     "name": "Cees van der Sande"
+    }, 
+    {
+     "name": "Farid Ishak"
+    }, 
+    {
+     "name": "Marco Quarantotti"
+    }, 
+    {
+     "name": "Nicola Cattan"
+    }, 
+    {
+     "name": "Regina Lalement"
+    }, 
+    {
+     "name": "Jorge Alves"
+    }, 
+    {
+     "name": "Reto Kofmehl"
+    }, 
+    {
+     "name": "Francesco Civardi"
+    }, 
+    {
+     "name": "Jonathan Markt"
+    }, 
+    {
+     "name": "Stefan Murre"
+    }, 
+    {
+     "name": "Kevin Bruin"
+    }, 
+    {
+     "name": "Dario Arlotta"
+    }, 
+    {
+     "name": "Neda Niazian"
+    }, 
+    {
+     "name": "oliver clavell"
+    }, 
+    {
+     "name": "Serda Brauns"
+    }, 
+    {
+     "name": "Ritchie Latimore"
+    }, 
+    {
+     "name": "Luca Schippa"
+    }, 
+    {
+     "name": "Ilona van Straten"
+    }, 
+    {
+     "name": "Adam Cox"
+    }, 
+    {
+     "name": "Jan Overgoor"
+    }, 
+    {
+     "name": "Arjen Schouten"
+    }, 
+    {
+     "name": "Erwin Palper"
+    }, 
+    {
+     "name": "Chankey Pathak"
+    }, 
+    {
+     "name": "Ido Darnell"
+    }, 
+    {
+     "name": "Thomas Stok"
+    }, 
+    {
+     "name": "A. Capogna"
+    }, 
+    {
+     "name": "Anna Pawlicka"
+    }, 
+    {
+     "name": "Antonella Travascio"
+    }, 
+    {
+     "name": "Petar Chalamov"
+    }, 
+    {
+     "name": "Nicolaas Nobel"
+    }, 
+    {
+     "name": "Peter Maddigan"
+    }, 
+    {
+     "name": "Maria Graca"
+    }, 
+    {
+     "name": "Veronica Cuccu"
+    }, 
+    {
+     "name": "Geiza de Souza Maudonet"
+    }, 
+    {
+     "name": "Evgenia Vessies"
+    }, 
+    {
+     "name": "Benoit Cadillac"
+    }, 
+    {
+     "name": "Tony de Graaf"
+    }, 
+    {
+     "name": "Pavel Levin"
+    }, 
+    {
+     "name": "Jean-Charles de Bievre"
+    }
+   ]
+  }, 
+  {
+   "name": "Control, Credit, Global, -, Ch", 
+   "children": [
+    {
+     "name": "Lara A. S. Sigona"
+    }, 
+    {
+     "name": "Alessandro Ristori"
+    }
+   ]
+  }, 
+  {
+   "name": "Partnerships,, Manager, Strate", 
+   "children": [
+    {
+     "name": "Motty Sasson"
+    }, 
+    {
+     "name": "Stefan Milic"
+    }
+   ]
+  }, 
+  {
+   "name": "Designer", 
+   "children": [
+    {
+     "name": "Panos Karageorgakis"
+    }, 
+    {
+     "name": "Alvaro den Hartog"
+    }, 
+    {
+     "name": "Thanos Samarinas"
+    }, 
+    {
+     "name": "Charles Lam"
+    }, 
+    {
+     "name": "Stuart Frisby"
+    }, 
+    {
+     "name": "German Kopytkov"
+    }
+   ]
+  }, 
+  {
+   "name": "Manager", 
+   "children": [
+    {
+     "name": "Sigrid Magnusson- Karlsson"
+    }, 
+    {
+     "name": "Alberto P\ufffdrez"
+    }, 
+    {
+     "name": "Andrew Philp"
+    }, 
+    {
+     "name": "David Evans"
+    }, 
+    {
+     "name": "Ton Eijck"
+    }, 
+    {
+     "name": "Sophie Huetten"
+    }, 
+    {
+     "name": "Gianbattista Vespucci"
+    }, 
+    {
+     "name": "Petra Hageman"
+    }, 
+    {
+     "name": "Sarah Quinlan"
+    }, 
+    {
+     "name": "Katie Stephens"
+    }, 
+    {
+     "name": "Saskia Armee"
+    }, 
+    {
+     "name": "Costas Hadjicostis"
+    }, 
+    {
+     "name": "Mario Cordeiro"
+    }, 
+    {
+     "name": "Michael Hoffs"
+    }, 
+    {
+     "name": "Tim Church"
+    }, 
+    {
+     "name": "Thiago Coutinho"
+    }, 
+    {
+     "name": "Liubou Minniyeva"
+    }, 
+    {
+     "name": "Oded Deckelbaum"
+    }, 
+    {
+     "name": "Kieren Wade"
+    }, 
+    {
+     "name": "Gergely Schmidt"
+    }, 
+    {
+     "name": "Arik Wasserman"
+    }, 
+    {
+     "name": "Maaike Apswoude"
+    }, 
+    {
+     "name": "Neda Niazian"
+    }, 
+    {
+     "name": "Nick van Lawick"
+    }, 
+    {
+     "name": "Cosimo Delli Carri"
+    }, 
+    {
+     "name": "Hadar (Heather) Fogel"
+    }, 
+    {
+     "name": "Florian Zielke"
+    }, 
+    {
+     "name": "Angelo Di Donato"
+    }, 
+    {
+     "name": "Daniel Hillary"
+    }, 
+    {
+     "name": "Evan Castle"
+    }, 
+    {
+     "name": "Ignazio Civello (Iggy)"
+    }
+   ]
+  }, 
+  {
+   "name": "Technician, IT", 
+   "children": [
+    {
+     "name": "Daniel Cetinic"
+    }, 
+    {
+     "name": "Donald van Emde Boas"
+    }, 
+    {
+     "name": "Athanasios Klapsas"
+    }
+   ]
+  }, 
+  {
+   "name": "Manager, Partnerships, Strateg", 
+   "children": [
+    {
+     "name": "Ryan Clarke"
+    }, 
+    {
+     "name": "Theodoros Papadopoulos"
+    }
+   ]
+  }, 
+  {
+   "name": "", 
+   "children": [
+    {
+     "name": "Faust D'Agata"
+    }, 
+    {
+     "name": "Roberto Wong"
+    }, 
+    {
+     "name": "Simon Siniora"
+    }, 
+    {
+     "name": "Annabel Romijn"
+    }, 
+    {
+     "name": "Marc Jansen"
+    }, 
+    {
+     "name": "Laura Ghidini Rodenberg"
+    }, 
+    {
+     "name": "Maarten Van Pijpen"
+    }, 
+    {
+     "name": "Smaragda Kalogeropoulou"
+    }, 
+    {
+     "name": "Angela Kyriakou"
+    }, 
+    {
+     "name": "Lu\ufffds Neiva"
+    }, 
+    {
+     "name": "Mark Cornwall"
+    }
+   ]
+  }, 
+  {
+   "name": "Senior, Product, Analyst", 
+   "children": [
+    {
+     "name": "Caroline Van Orsouw"
+    }, 
+    {
+     "name": "Joachim Fiess"
+    }
+   ]
+  }, 
+  {
+   "name": "DBA, Senior", 
+   "children": [
+    {
+     "name": "Glenn Nadeau"
+    }, 
+    {
+     "name": "Guy Nir"
+    }
+   ]
+  }, 
+  {
+   "name": "Services, Professional, Leader", 
+   "children": [
+    {
+     "name": "Hila Kantor"
+    }, 
+    {
+     "name": "Ofer Orenstein"
+    }
+   ]
+  }, 
+  {
+   "name": "Chief, Officer", 
+   "children": [
+    {
+     "name": "Eldad Farkash"
+    }, 
+    {
+     "name": "Philipp Wassibauer"
+    }, 
+    {
+     "name": "Pepijn Rijvers"
+    }, 
+    {
+     "name": "Ron Levin"
+    }, 
+    {
+     "name": "Amit Bendov"
+    }, 
+    {
+     "name": "Darren Huston"
+    }, 
+    {
+     "name": "Gillian Tans"
+    }, 
+    {
+     "name": "Joerg Blumtritt"
+    }
+   ]
+  }, 
+  {
+   "name": "Talent, Acquisition", 
+   "children": [
+    {
+     "name": "Sigrid Magnusson- Karlsson"
+    }, 
+    {
+     "name": "Jessica McNaughton"
+    }
+   ]
+  }, 
+  {
+   "name": "President, Vice", 
+   "children": [
+    {
+     "name": "Atul Shridhar"
+    }, 
+    {
+     "name": "Tom Newton"
+    }, 
+    {
+     "name": "Aviad Harell"
+    }, 
+    {
+     "name": "Keren Myr"
+    }
+   ]
+  }, 
+  {
+   "name": "Controller", 
+   "children": [
+    {
+     "name": "Sergejs Cvetkovs"
+    }, 
+    {
+     "name": "Arie Van Sluijsdam"
+    }
+   ]
+  }, 
+  {
+   "name": "", 
+   "children": [
+    {
+     "name": "Vitezslav Koko Kohout"
+    }, 
+    {
+     "name": "Elad Israeli"
+    }, 
+    {
+     "name": "Hiroki Kudo"
+    }, 
+    {
+     "name": "Javier Suarez"
+    }, 
+    {
+     "name": "Steven Oliemans"
+    }, 
+    {
+     "name": "Aviad Harell"
+    }
+   ]
+  }, 
+  {
+   "name": "Director, Sales", 
+   "children": [
+    {
+     "name": "Peter Jeitschko"
+    }, 
+    {
+     "name": "Yair Areli"
+    }
+   ]
+  }, 
+  {
+   "name": "Development", 
+   "children": [
+    {
+     "name": "Nancy Factor"
+    }, 
+    {
+     "name": "Nikoletta Stergiopoulou"
+    }, 
+    {
+     "name": "Viktoria Denisova"
+    }, 
+    {
+     "name": "Geert-Jan Bruinsma"
+    }, 
+    {
+     "name": "Uri Eisner"
+    }
+   ]
+  }
+ ]
+}
